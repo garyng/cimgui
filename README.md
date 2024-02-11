@@ -1,6 +1,10 @@
 
 This uses [garyng/imgui](https://github.com/garyng/imgui).
 
+1. Update `imgui` submodule
+1. Run `generate` workflow via Actions to generate bindings
+1. Merge auto-created pull request
+
 ---
 
 # cimgui [![Build Status](https://travis-ci.org/cimgui/cimgui.svg?branch=master)](https://travis-ci.org/cimgui/cimgui)
