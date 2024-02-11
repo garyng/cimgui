@@ -1,4 +1,4 @@
-name: Build
+name: release
 
 on:
   workflow_dispatch:
@@ -36,4 +36,13 @@ jobs:
       working-directory: ./generator
       run: |
         luajit ./generator.lua gcc "internal noimstrv"
-        
+    
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        commit-message: |
+          feat: update bindings
+        branch: features/update-bindings
+        delete-branch: true
+        title: |
+          Update bindings
