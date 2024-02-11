@@ -1,5 +1,5 @@
 
-This uses [garyng/imgui](https://github.com/garyng/imgui).
+This branch uses [garyng/imgui](https://github.com/garyng/imgui).
 
 1. Update `imgui` submodule
 1. Run `generate` workflow via Actions to generate bindings
